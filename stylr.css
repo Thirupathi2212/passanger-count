@@ -1,0 +1,28 @@
+.Main-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    height: 100vh;
+    width: 100%;
+}
+.sub-page{
+    background-color: rgb(243, 18, 18);
+    height: 600px;
+    width: 700px;
+    box-shadow:  5px 5px 10px 6px lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+button{
+    padding: 10px 40px 10px 40px;
+    
+    
+    margin: 15px;
+}
+button:hover{
+    box-shadow: 5px 6px 7px 5px black;
+}

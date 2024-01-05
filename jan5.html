@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylr.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(function(){
+            $("#fe").click(function(){
+                $(this).hide(3000);
+
+            });
+
+
+        });
+
+    </script>
+</head>
+<body>
+    <div class="Main-page">
+        <div class="sub-page">
+            <h1>Enter Values</h1>
+            <h2 id="value">0</h2>
+            <button onclick="plus()">ADD</button>
+            <button onclick="sub()">SUB</button>
+            <button onclick="save()">Save</button>
+            <h3 id="final"></h3>
+            <div style="background-color: white; height: 200px; width: 200px; display: flex;align-items: center;justify-content: center; flex-direction: column; ">
+                <h5 id="fe">hello</h5>
+                <p id="dr" style="background-color: blue; padding: 10px; color: white;">fnoin 2efoi</p>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        var final = document.getElementById("final");
+        var value = document.getElementById("value");
+        var count = 0
+        function plus(){
+            count=count+1
+            value.innerText = count
+        }
+        function sub(){
+            count = count-1
+            value.innerText = count
+        }
+        function save(){
+            let countstr = count + "-"
+            final.innerText +=countstr
+            value.innerText = 0
+            count=0
+        }
+        
+    </script>
+    
+</body>
+</html>
